@@ -1,0 +1,36 @@
+Todays Node: Sprite 2D and 3D 
+Both nodes display a texture
+ and support sprite sheets with frames,
+ frame coordinates,
+ horizontal and vertical frame counts,
+ and atlas region rendering using a region rectangle.
+Sprite 2D is used in 2D rendering.
+ It works in the canvas or 2D world.
+ It supports features like centering,
+ offset,
+ horizontal and vertical flipping,
+ and pixel-precise interaction tools such as bounding box detection
+ and pixel opacity checks.
+ It is sensitive to pixel alignment
+ and may require snapping
+ for sharp pixel art.
+Sprite 3D is used in a 3D environment.
+ It displays a 2D texture inside a 3D world
+ using 3D transforms like position,
+ rotation, and scale.
+ It does not include 2D-specific controls
+ like offset
+ or centering.
+ Instead,
+ it can be affected by 3D materials
+ and supports billboard-style
+ rendering through its base class.
+The main difference is 
+the rendering space.
+ Sprite 2D operates in 
+a flat 2D canvas system,
+ while Sprite 3D exists inside a 3D scene.
+ Sprite 2D is ideal for UI
+ and traditional 2D games.
+ Sprite 3D is used
+ when 2D images need to exist in a 3D world.
